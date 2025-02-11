@@ -1,6 +1,6 @@
 #terms 
 
-![[Pasted image 20250210171542.png]]
+![Global Infrastructure](../attachments/global_infrastructure.png)
 # Region
 **Physical location around the world where data centers are clustered together**
 A group of logical data centers is called an Availability Zone

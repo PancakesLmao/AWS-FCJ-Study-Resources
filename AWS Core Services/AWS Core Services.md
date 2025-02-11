@@ -20,3 +20,4 @@ The services, practices and strategies that you can use to build more agile appl
 [[Amazon Cloudfront]]
 [[Amazon Route 53]]
 [[Amazon EC2]]
+[[Amazon RDS]]
