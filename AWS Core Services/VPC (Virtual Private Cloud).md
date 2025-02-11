@@ -23,7 +23,7 @@ Amazon VPC provides features that you can use to increase and monitor the secur
 
 # Architect a Cloud solution using VPC
 The diagram shows how you can use a VPC to build a solution that has both a public subnet and a private subnet. The public subnet has an EC2 instance that hosts a web application that has access to the internet. The private subnet has an RDS instance that is protected from direct access to the internet.
-![[works_with_VPC.png]]
+![Works with VPC](../attachments/works_with_VPC.png)
 
 # How to use VPC
 ## Host a simple website

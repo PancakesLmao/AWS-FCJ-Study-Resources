@@ -2,7 +2,7 @@
 Application are made of multiple components. The components communicate with each other to transmit data, fulfill requests, and keep the application running. 
 They are use for small-scaled projects, with simple development flow (submit, changes, review, merge code, continue), centralize management
 Since they are tightly coupled components, if a single components fails, then other components will likely fail --> might result in entire application to fail
-![[Pasted image 20250211104832.png]]
+![Monolithic Model](../attachments/monolithic_model.png)
 
 # Microservice Architecture
 On the other hand, we have microservice architecture, where components are loosely coupled, so if a single component fails, the others continue to work 

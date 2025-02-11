@@ -13,7 +13,8 @@ Amazon EC2 solves **the problem of predicting upfront needs**. Therefore, you do
 
 # Architect a Cloud solution with EC2
 With Amazon EC2, you can architect a solution to build a multi-tier application. To construct this solution, you create an instance in a public subnet that hosts a website with a security group that allows internet traffic in and out. Then, you can create another instance that hosts a database in a private subnet with a hardened security group. This security group restricts internet traffic, but allows the website instance to access the database instance.
-![[works_with_ec2.png]]
+
+![Works with EC2](../attachments/works_with_ec2.png)
 
 # How to use EC2
 ## Host multi-tier applications
