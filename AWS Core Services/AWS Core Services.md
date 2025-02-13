@@ -17,7 +17,11 @@ The services, practices and strategies that you can use to build more agile appl
 
 # Core Services
 [[VPC (Virtual Private Cloud)]]
-[[Amazon Cloudfront]]
-[[Amazon Route 53]]
 [[Amazon EC2]]
 [[Amazon RDS]]
+[[Amazon SNS]]
+[[Amazon CloudWatch]]
+[[AWS Lambda]]
+[[Amazon S3]]
+[[Amazon DynamoDB]]
+[[IAM]]
