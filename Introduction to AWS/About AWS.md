@@ -8,3 +8,5 @@ AWS is and extensive, reliable, and secure global cloud infrastructure with over
 ## [[Total Cost of Ownership (TCO)]] and billing considerations
 [[Total Cost of Ownership (TCO)#Visit AWS Pricing Calculator]]
 [[Total Cost of Ownership (TCO)#AWS Pricing Models]]
+
+[[Differences between SaaS and On-Premise]]

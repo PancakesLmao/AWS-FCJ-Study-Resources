@@ -22,7 +22,7 @@ Here we have user in Dev account is assuming a role in the production account. T
 ## Fine-grained access control
 Your users can use IAM to control access to AWS service APIs and to specific resources. You can use IAM to add specific conditions for how a user can use AWS resources or their originating IP address. These conditions might also determine whether they are using **Secure Sockets Layer (SSL)** or whether they have authenticated with a multi-factor authentication device
 ## Multi-factor authentication
-Use to protect you AWS environment by using [[**AWS multi-factor authentication (MFA)**]]. MFA is a security feature available at **no extra cost** that augments user name and password credentials. MFA requires users to prove physical possession of a hardware MFA token or MFA-enabled mobile device by providing a valid MFA code
+Use to protect you AWS environment by using **[[AWS multi-factor authentication]]** (MFA). MFA is a security feature available at **no extra cost** that augments user name and password credentials. MFA requires users to prove physical possession of a hardware MFA token or MFA-enabled mobile device by providing a valid MFA code
 ## Analyze access
 IAM helps your analyze access across AWS environment. Your security teams and administrators can quickly validate that your policies only provide the intended public and cross-account access to your resources. You can also easily identify and refine your policies to allow access to only the services that being used. This practice helps you to better adhere to the principle of least privilege 
 ## Integrate with your corporate directory
