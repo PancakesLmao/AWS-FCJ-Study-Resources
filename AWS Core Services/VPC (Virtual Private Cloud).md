@@ -3,7 +3,7 @@
 Amazon Virtual Private Cloud (Amazon VPC) is a service that lets you create a private, customized network inside AWS. It acts like your own personal data center in the cloud, where you control the network settings.
 
 With Amazon VPC, you can set up different sections (called subnets) in your network:
-- **Public Subnet:** A section where resources like web servers can be accessed from the internet. This is useful for hosting websites and applications.
+- **Public Subnet:** A section where resources like web servers can be accessed from the internet. This is useful for hosting websites and applications. Used to communicate between your instances and the internet
 - **Private Subnet:** A section for backend systems like databases or internal servers. These do not have direct internet access, keeping them more secure.
 
 To enhance security, Amazon VPC includes multiple protective layers:

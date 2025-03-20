@@ -27,16 +27,53 @@ Amazon EC2 lets you provision instances to **perform computing jobs and terminat
 ## Host databases
 AWS offers fully managed and serverless database services ([[AWS Core Services#Type of Services]]) that you can provision for all your database needs. However, with both fully managed services and serverless services, you don't have access to the operating system of the database. But you can **host your own database on an EC2 instance**, if your company requires you to have that access.
 
+## Train and deploy machine learning (ML) applications
+Amazon EC2 delivers the broadest choice of compute, networking (up to 400 Gbps), and storage services, purpose-built to optimize price performance for ML projects.
+
 # What need to be kept in mind
 If you stop an instance, the Amazon Elastic Block Store([[Amazon EBS]]) volume that is attached will retain your data. ***You will still be charged for the use of the volume***. However, if you terminate the instance, then all your data on the volume will be permanently deleted. The volume will return to AWS for available use to other AWS customers.
 
-# Cost
+# Cost (Visit [[Instance]] for more detail)
+
 ## On-demand Instances
 With On-Demand instances, you **pay for instances only for the amount of time that you use them**. No long-term commitments or upfront payments are required. You can increase or decrease your compute capacity depending on the demands of your application and pay only for the time that you use them. 
 **Use case:** Short-term computing workloads that cannot be interrupted; and users that need low-cost computing without any upfront or long-term commitment.
 ## Spot Instances
 You can use Amazon EC2 Spot Instances to take advantage of unused Amazon EC2 capacity in the AWS cloud for a discount. You can save up to 90 percent compared to On-Demand prices. To get a Spot Instance, you submit a request with the instance specifications and the maximum price that you are willing to pay per hour. When a Spot Instance is available at your submitted price, you will have access to the instance. 
 **Use case:** Workloads that can be paused and restarted when computing prices meet your budget for Spot Instances.
-## Reserved Instances
+## Reserved Instances (RI)
 Reserved Instances provide you with a significant discount(up to 75 percent) compared to On-Demand Instance pricing. With Reserved Instances, you commit to paying for the instance for 1 or 3 years, depending on the conditions you agree to when purchasing them. 
 **Use case:** Computing needs with a steady amount usage of up to 1 year or more.
+
+# Launching an EC2
+
+![How to launch an EC2](../attachments/launch_ec2.png)
+
+# Tags Features
+## Manage Tags
+Add, remove or edit tags
+The tag limit per Amazon EC2 resource is 50 tags
+Naming and tagging resources is **optional**
+
+## Search and filter
+Search for resources by key or by value
+Filter and search for resources by a combination of tag keys and values
+
+## Benefits of using tags
+- **Resource organization:** With the [[AWS Resource Groups]] service, you can create groups of AWS resources based on one or more tags or portions of tags. Using Resource Groups and Tag Editor, you can consolidate and view data for applications that consist of multiple services, resources, and Regions in one place.
+- **Cost management:** use [[AWS Cost Explorer]] and detailed billing cost to break down AWS cost by tag
+- **Automation:** Automation tags are used to opt in or opt out of automated tasks or to identify specific versions of resources to archive, update or delete
+- **Access control:** Using [[AWS Identity and Access Management]], you can use tagged resources to implement attribute-based control (ABAC). You can create IAM policies that allow operations based on tag information to control access. ABAC helps provide better control over which resources a user can modify, use, or delete.
+# [[Amazon Machine Image]]
+
+# [[Key Pairs]]
+# [[Security Group]]
+
+# [[VPC (Virtual Private Cloud)]]
+
+# [[Advanced Detail]]
+
+# [[User Data]]
+
+![Configuration considerations](../attachments/configurations.png)
+# [[Amazon EBS]]

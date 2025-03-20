@@ -25,7 +25,8 @@ By combining AWS Lambda with other AWS services, developers can build powerful w
 ## Data processing
 You can use AWS Lambda to execute code in response to triggers such as changes in data, shifts in system state, or actions by users. Lambda can be directly triggered by AWS services such as [[Amazon S3]], [[Amazon DynamoDB]], [[Amazon Kinesis]], [[Amazon SNS]], and [[Amazon CloudWatch]], or it can be orchestrated into workflows by AWS Step Functions. Thus, you can build a variety of real-time serverless data processing systems.
 ## Real-time file processing
-You can use [[Amazon S3]] to trigger AWS Lambda to process data immediately after an upload. You can also connect to an existing [[Amazon EFS]] (Amazon Elastic File System) filesystem directly, which enables massively parallel shared access for large-scale file processing. For example, you can use Lambda to thumbnail images, transcode videos, index files, process logs, validate content, and aggregate and filter data in real-time.
+You can use [[Amazon S3]] to trigger AWS Lambda to process data immediately after an upload. 
+You can also connect to an existing [[Amazon EFS]] (Amazon Elastic File System) filesystem directly, which enables massively parallel shared access for large-scale file processing. For example, you can use Lambda to thumbnail images, transcode videos, index files, process logs, validate content, and aggregate and filter data in real-time.
 ## Real-time stream processing
 You can use AWS Lambda and [[Amazon Kinesis]] to process real-time streaming data for application activity tracking, transaction order processing, and click stream analysis. You can also use it for data cleansing, metrics generation, log filtering, indexing, social media analysis, and Internet of Things (loT) device data telemetry and metering.
 

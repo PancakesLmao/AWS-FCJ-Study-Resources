@@ -24,4 +24,4 @@ The services, practices and strategies that you can use to build more agile appl
 [[AWS Lambda]]
 [[Amazon S3]]
 [[Amazon DynamoDB]]
-[[IAM]]
+[[AWS Identity and Access Management]]

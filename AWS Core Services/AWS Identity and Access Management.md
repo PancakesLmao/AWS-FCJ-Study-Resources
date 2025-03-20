@@ -2,11 +2,11 @@
 
 IAM is an **centralized security management system** that is included in every AWS Account to control identity access to AWS services. By attaching **IAM permission policies** to identifies, you can manage which services each identity can access and the kind of actions the identity can perform
 
-## IAM User
+## [[IAM User]]
 It's **an identity** that you create in AWS, represents the person or service who uses the IAM user to interact with AWS
 ## IAM Group
 It's a **collection of IAM Users**. You can user groups to specify permissions for a collection of users, which can make those permissions easier to manage for those users
-## IAM Role
+## [[IAM Role]]
 **An identity with permission policies** that attached to it. An IAM user or service can assume these policies to temporarily take on on different permissions for a specific task 
 # What problem does it solve?
 User having more access than they should
