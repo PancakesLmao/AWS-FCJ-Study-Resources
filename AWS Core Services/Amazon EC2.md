@@ -33,6 +33,9 @@ Amazon EC2 delivers the broadest choice of compute, networking (up to 400 Gbps),
 # What need to be kept in mind
 If you stop an instance, the Amazon Elastic Block Store([[Amazon EBS]]) volume that is attached will retain your data. ***You will still be charged for the use of the volume***. However, if you terminate the instance, then all your data on the volume will be permanently deleted. The volume will return to AWS for available use to other AWS customers.
 
+# [[Vertical Scaling]]
+# [[Horizontal Scaling]]
+# [[Amazon EC2 Auto Scaling]]
 # Cost (Visit [[Instance]] for more detail)
 
 ## On-demand Instances
@@ -76,4 +79,5 @@ Filter and search for resources by a combination of tag keys and values
 # [[User Data]]
 
 ![Configuration considerations](../attachments/configurations.png)
+# [[EC2 Lifecycles States]]
 # [[Amazon EBS]]

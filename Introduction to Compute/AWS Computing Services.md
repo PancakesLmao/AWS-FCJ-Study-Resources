@@ -1,4 +1,5 @@
 [[Amazon EC2]]
+[[Amazon EC2 Auto Scaling]]
 [[AWS Lambda]]
 [[Amazon ECS]]
 [[Amazon EKS]]
