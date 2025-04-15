@@ -1,4 +1,5 @@
 #services 
+
 1 Amazon EC2 Auto Scaling helps you maintain application availability and lets you automatically
 add or remove EC2 instances according to conditions that you define.
 

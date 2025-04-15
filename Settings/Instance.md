@@ -7,6 +7,7 @@ t3.large
 **3** - the generation number
 **large** - the size of the instance
 
+## [[Amazon Machine Image]] (AMI)
 # Instance Categories
 ## General purpose
 Instance types: **A1, M4, M5, T2, T3**
@@ -74,6 +75,8 @@ Amazon EC2 offers three tenancy options for hosting your instances. The tenancy 
 | When you **will need enough** or close to enough dedicated instances to fill a host. | When you **do not need** enough dedicated instances to fill a host. |                                                     |                                     |
 | Using **existing** per-socket, per-core, or per-VM software licenses that are **bound** to VMs, sockets, or physical cores, subject to your license terms. |                                                     |                                                     |                                     |
 
-## [[Amazon Machine Image]] AMI
-## EC2 Instance type
-## Storage type and size
+# Optimizing Instance Costs
+- **Right-sizing** your instances means that you choose the right balance of instance types. This process includes monitoring when servers can be either sized down or turned off and still meet your performance requirements
+- **Increase elasticity** is the practice of designing your deployments to reduce the amount of server capacity that is idle by implementing deployments that are elastic. For example, you can have deployments that use automatic scaling to handle peak loads.
+- **Optimal pricing model** is about recognizing the available pricing options. Analyze your usage patterns so that you can run EC2 instances with the right mix of pricing options.
+- **Optimizing storage choices** requires you to analyze the storage requirements of your deployments. The goal is to reduce unused storage overhead when possible and choose less expensive storage options if they still meet your requirements for storage performance.
