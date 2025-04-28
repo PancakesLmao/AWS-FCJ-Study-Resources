@@ -1,5 +1,6 @@
-[[Introduction to Compute]]
 [[Definition of Cloud Computing]]
 [[About AWS]]
 [[AWS Core Services]]
 [[Other services]]
+[[Introduction to Networking]]
+[[Introduction to Compute]]

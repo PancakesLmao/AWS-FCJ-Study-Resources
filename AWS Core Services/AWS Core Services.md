@@ -15,7 +15,7 @@ The services that automate infrastructure management task that AWS handles, like
 ## Serverless Services
 The services, practices and strategies that you can use to build more agile applications. In this way, you can innovate and respond to change faster. With serverless services, AWS handles infrastructure management task like capacity provisioning and patching so that you can focus on building applications that serve your customers. Serverless services come with **automatic scaling, built-in high availability**, and **pay-for-value** billing model
 
-# Core Services
+# Core Services Table of Contents
 [[VPC (Virtual Private Cloud)]]
 [[Amazon EC2]]
 [[Amazon RDS]]

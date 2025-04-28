@@ -1,1 +1,2 @@
-[[What is computing]]
+# Table of Contents
+## [[What is computing]]
