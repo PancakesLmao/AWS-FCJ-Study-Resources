@@ -12,7 +12,10 @@ You want to build your application to be highly available and fault tolerant. To
 The type is where you choose the specific type of protocol to open to network traffic. You can choose a common protocol, such as SSH (for a Linux instance), RDP (for a Windows instance), and HTTP and HTTPS to allow internet traffic to reach your instance.
 ## Protocol 
 Internet protocols are different ways that computers and other services on the internet can send information to each other. The protocol section shows the protocol to allow for the protocol type.
-The most common protocols are 6 (TCP), 17 (User Datagram Protocol, or UDP), and 1 (Internet Control Message Protocol, or ICMP).
+The most common protocols are 
+- 6 (TCP) 
+- 17 (User Datagram Protocol, or UDP)
+- 1 (Internet Control Message Protocol, or ICMP).
 ## Port range
 The port range verifies the ports that are allowed to pass traffic for each protocol type. You can specify a single port number (for example, 22), or range of port numbers (for example, 7000-8000).
 ## Source
@@ -34,6 +37,10 @@ For every outbound rule, an inbound rule exists, even if you don't configure one
 
 If an inbound rule allows a protocol in, it must allow an outbound rule response
 If an outbound rule allows a protocol out, it must allow an inbound rule response 
+
+| Inbound Rule | Outbound Rule |
+| ------------ | ------------- |
+| Allow all    | No rule       |
 
 # Managing Security Group
 + Security groups act at the **INSTANCE LEVEL**, not the subnet level.

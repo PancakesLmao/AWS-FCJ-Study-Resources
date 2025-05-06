@@ -75,6 +75,7 @@ VPC CIDR blocks can range from:
 
 ***VPC CIDR blocks must not overlap with any other connected networks, including on-premises networks if you’re planning to connect them***
 
+Before you delete a VPC, you must terminate or delete some resources that were created in the VPC
 # VPC Architectural Patterns
 ## Single VPC Pattern
 - 1 VPC per region/account

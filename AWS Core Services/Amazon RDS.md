@@ -8,7 +8,7 @@ Amazon RDS solves the problem of purchasing a database with a capacity that is e
 - You don’t need to worry about setting up the hardware or managing the database software.
 - With just a few clicks or an API call, you can easily **scale** (increase or decrease) the database’s compute power and storage based on your needs.
 - - Amazon RDS can handle **demanding applications**, meaning it’s built to support high-performance databases.
-- You can run your databases in **Amazon [[VPC (Virtual Private Cloud)]]**, which allows you to **isolate** (keep private) your database from the rest of the network.
+- You can run your databases in **Amazon VPC (Virtual Private Cloud)**, which allows you to **isolate** (keep private) your database from the rest of the network.
 - Alternatively, you can connect your database securely to your existing infrastructure using an **encrypted VPN**.
 # Architect a Cloud solution with RDS
 You can architect a solution to build for fault tolerance by configuring Amazon RDS for **Multi-AZ deployment.** To accomplish this task, you place your master RDS instance in one Availability Zone, and a standby replica of the master in another Availability Zone. If the primary fails, then the standby automatically becomes the new master and your system remains active.
