@@ -15,7 +15,7 @@ Divide into 4 Subnets (use /26):
 ## Public subnets
 A public subnet **allows internet traffic** that is **routed through an [[Internet gateway]] (IGW)** to reach the subnet. A public subnet might make a good choice if you have a website that is targeting customers.
 ## Private subnets
-A private subnet **denies traffic to the subnet that is routed from the public internet**. You should use a private subnet if your network must connect to services outside your network but must **restrict external services** from initiatinga connection to your network. **Access to the public internet from a private subnet requires a NAT device. [[NAT Gateway]]**
+A private subnet **denies traffic to the subnet that is routed from the public internet**. You should use a private subnet if your network must connect to services outside your network but must **restrict external services** from initializing connection to your network. **Access to the public internet from a private subnet requires a NAT device. [[NAT Gateway]]**
 ## [[Virtual Private Gateway]]
 
 # Subnetting in AWS

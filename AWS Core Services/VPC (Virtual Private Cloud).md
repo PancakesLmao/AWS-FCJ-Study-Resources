@@ -39,6 +39,9 @@ Compare how much simpler it can be to associate components to your VPC if they a
 | vpc-s897fsf9afs09h3jk30 (Production VPC) | vpc-s897fsf9afs09h3jk30    |
 | vpc-nj789sedjnalhalje30 (Testing VPC)    | vpc-nj789sedjnalhalje30    |
 
+# Other Features
+[[VPC Peering]]
+[[VPC Endpoints]]
 # What problem does VPC solved?
 Amazon VPC provides features that you can use to increase and monitor the security for your virtual private cloud (VPC) **ON DEMAND**. Therefore, you can create a data center as you need it and terminate it when you no longer need it.
 
@@ -101,4 +104,4 @@ Use cases:
 - Need **Separation of billing, security, compliance**
 - Governance via AWS Organizations
 # Cost
-An Amazon VPC **doesn't cost you anything at a basic level**. In fact, when you set up your AWS account, you are given a default VPC. A VPC consists of many components that do not cost you anything, **such as subnets, route tables, network ACLs, security groups, and an internet gateway**. However, you can also add features to your Amazon VPC such as a **[[NAT Gateway]] and [[Elastic IP]]s that do have associated charges**. Also, any service that you place in your Amazon VPC, such as [[Amazon EC2]], will carry with it the associated cost for that service.
+An Amazon VPC **doesn't cost you anything at a basic level**. In fact, when you set up your AWS account, you are given a default VPC. A VPC consists of many components that do not cost you anything, **such as subnets, route tables, network ACLs, security groups, and an internet gateway**. However, you can also add features to your Amazon VPC such as a **NAT Gateway and [[Elastic IP]]s that do have associated charges**. Also, any service that you place in your Amazon VPC, such as [[Amazon EC2]], will carry with it the associated cost for that service.

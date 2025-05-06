@@ -1,3 +1,4 @@
+#config
 A NACL is an optional layer of security for your VPC that acts as a **stateless firewall** for controlling traffic in and out of one or more **subnets**.
 A NACL provides fine-grained control of traffic at the subnet level, complementing security groups, which operate at the instance level. NACLs are especially useful when you want to implement **broad traffic filtering rules** across multiple instances in a subnet.
 # Rule Features
