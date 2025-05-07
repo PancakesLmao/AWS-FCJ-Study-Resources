@@ -22,10 +22,10 @@ A private subnet **denies traffic to the subnet that is routed from the public i
 For **each subnet CIDR block** that you specify, AWS reserves five IP addresses within that block, and
 these addresses are not available for use.
 
-| Reserved IP address for AWS CIDR blocks   | Purpose of reservation                    |
-| ---------------------------------------- | ----------------------------------------- |
-| 1st                                       | Network address                           |
-| 2nd                                       | VPC local router (internal communication) |
-| 3r                                   P    | Domain name system (DNS) resolution       |
-| 4                                   IP    | Future use                                |
-| L                                  t IP   | Network broadcast address                 |
+| Reserved IP address <br>for AWS CIDR blocks | Purpose of reservation                    |
+| ------------------------------------------- | ----------------------------------------- |
+| 1st                                         | Network address                           |
+| 2nd                                         | VPC local router (internal communication) |
+| 3rd                                         | Domain name system (DNS) resolution       |
+| 4th                                         | Future use                                |
+| 5th                                         | Network broadcast address                 |

@@ -14,7 +14,7 @@ You can use Amazon DynamoDB to store an application's stored data
 
 ![Works with DynamoDB](../attachments/works_with_DynamoDB.png)
 
-In this example, a user accesses an application that is stored in Amazon S3. The user chooses an option to receive data. [[Amazon API Gateway]] will then trigger Lambda to retrieve data from DynamoDB and send it back to the user's interface
+In this example, a user accesses an application that is stored in Amazon S3. The user chooses an option to receive data. Amazon API Gateway will then trigger Lambda to retrieve data from DynamoDB and send it back to the user's interface
 # How to use 
 ## Retail
 Many companies in the retail space use common DynamoDB design patterns to deliver consistently low latency for mission-critical use cases. Being free from scaling concerns and operational burden is a key competitive advantage. It provides for high-velocity, extreme-scaled events such as Amazon Prime Day, whose magnitudes are difficult to forecast. By scaling up and down, these customers pay only for the capacity that they need. They can keep precious technical resources focused on innovations rather than operations.

@@ -10,7 +10,7 @@ An Availability Zone is a **zoned area within a Region that harbor one or more d
 
 They are physically separated by a meaningful distance (up to 100km or 60miles) from any other Availability Zone in the Region
 
-Availability Zones are **Interconnected** with high-bandwidth, low-latency networking to provide low-latency networking between zones that is sufficient to accomplish synchronous replication (same time replication)
+Availability Zones are **Interconnected** with high-bandwidth, low-latency  networking to provide low-latency networking between zones that is sufficient to accomplish synchronous replication (same time replication)
 # Edge Location
 Edge locations are connected to the AWS Regions through the AWS network across the globe. They link with tens of thousands of networks for **improved origin fetches and dynamic content acceleration** 
 

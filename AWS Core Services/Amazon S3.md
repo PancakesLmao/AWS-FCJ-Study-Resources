@@ -1,10 +1,9 @@
 #services 
-Amazon S3 is object storage that is built to store and retrieve any amount of data from anywhere at any time. It's a simple storage service that offers **industry-leading durability, availability, performance, security, and virtually unlimited scalability** at **LOW COST**.
 
+Amazon S3 is object storage that is built to store and retrieve any amount of data from anywhere at any time. It's a simple storage service that offers **industry-leading durability, availability, performance, security, and virtually unlimited scalability** at **LOW COST**.
 # What problem does it solve?
 - You don’t have to guess how much storage you need. Just create a **bucket** and upload as many files as you want. Amazon S3 **automatically scales** as your storage needs grow.
 - Every file you upload is **automatically copied** to multiple locations within the same AWS Region. This means your data is **highly available** (easy to access) and **durable** (safe from data loss).
-
 # Benefits
 - Amazon S3 offers you **industry-leading performance, scalability, availability, and durability** that you can use to easily build applications that use cloud native storage. As a result, you consistently have your data when you need it.
 - Because Amazon S3 is **SERVERLESS**, it is **highly scalable**. Therefore, you can start small and grow your application as you want, with no compromise on performance or reliability.
@@ -14,7 +13,7 @@ Using Amazon S3 to host a static website anywhere in the world
 
 ![Works with RDS](../attachments/works_with_S3.png)
 
-In this example, Amazon S3 is being used to host a static website. The website content is uploaded to Amazon S3 and directed to [[Amazon CloudFront ]] (a content delivery service) to deliver the content to the internet. Users can then access the website on their browser.
+In this example, Amazon S3 is being used to host a static website. The website content is uploaded to Amazon S3 and directed to Amazon CloudFront (a content delivery service) to deliver the content to the internet. Users can then access the website on their browser.
 
 # How to use S3
 ## Backup and restore

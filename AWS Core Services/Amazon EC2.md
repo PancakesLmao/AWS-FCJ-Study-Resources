@@ -70,7 +70,6 @@ Filter and search for resources by a combination of tag keys and values
 # [[Amazon Machine Image]]
 
 # [[Key Pairs]]
-# [[Security Group]]
 
 # [[VPC (Virtual Private Cloud)]]
 
