@@ -1,6 +1,6 @@
 #terms
 
-Cloud computing is the on-demand delivery of IT resources over the internet with pay-as-you-go pricing
+Cloud computing is the on-demand delivery of IT resources over the internet with **Pay-as-you-go** pricing
 ### On demand delivery
 Cloud provider has the resource when you need it
 ### IT resources over the internet
@@ -11,7 +11,7 @@ Pay for that you need when you use it
 # Client-server model
 Modern computing is based on the client-server model
 
-Client make a request for sth to the server --> The server verify the request --> return needed information
+Client make a request for sth_sth to the server --> The server verify the request --> return needed information
 # 6 Benefits
 1. Trade upfront expense for variable expense
 2. Stop spending money to run and maintain data centers

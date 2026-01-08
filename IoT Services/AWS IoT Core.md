@@ -1,6 +1,7 @@
 #services #iot
 
 AWS IoT Core is a fully managed cloud service that lets you connect IoT devices to AWS services and other devices securely, reliably, and at scale. It enables bi-directional communication between internet-connected devices (e.g., sensors, microcontrollers) and the cloud.
+![Works with RDS](../attachments/iot_core_components.png)
 
 # Features
 

@@ -50,6 +50,6 @@ Delete on termination indicates whether the volume should be automatically delet
 
 You can also change the delete on termination behaviour after the instance has been launched.
 ## Encryption
-Amazon EBS encryption **IS** an encryption solution for your EBS volumes. You **have the option to encrypt your root volume** and any additional volumes that you attach to your EC2 instance. Amazon EBS encryption uses **AWS Key Management Service** ([[AWS KMS)]] keys to encrypt volumes. AWS KMS is a security service that lets you create and manage cryptographic keys and control their use across a wide range of AWS services.
+Amazon EBS encryption **IS** an encryption solution for your EBS volumes. You **have the option to encrypt your root volume** and any additional volumes that you attach to your EC2 instance. Amazon EBS encryption uses **AWS Key Management Service** ([[AWS KMS]] keys to encrypt volumes. AWS KMS is a security service that lets you create and manage cryptographic keys and control their use across a wide range of AWS services.
 
 # [[Amazon EFS]]

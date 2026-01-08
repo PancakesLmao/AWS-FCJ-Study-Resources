@@ -1,0 +1,1 @@
+**AWS PrivateLink** is a technology that provides private connectivity between VPCs, AWS services, and your on-premises networks without exposing your traffic to the public internet.

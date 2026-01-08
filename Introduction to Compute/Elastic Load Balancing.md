@@ -1,6 +1,6 @@
 #services 
 
-**Elastic Load Balancing (ELB)** is a **[[highly available]]** and **[[scalable]]** AWS service that automatically distributes incoming network or application traffic across multiple targets, such as **[[Amazon EC2]] instances**, **containers**, or **IP addresses**, within one or more availability zones.
+**Elastic Load Balancing (ELB)** is a **[[High Availability]]** and **[[Scalability]]** AWS service that automatically distributes incoming network or application traffic across multiple targets, such as **[[Amazon EC2]] instances**, **containers**, or **IP addresses**, within one or more availability zones.
 
 # ELB Options
 ## Application Load Balancer

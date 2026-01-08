@@ -3,59 +3,74 @@
 **Amazon CloudFront** is a **global content delivery network (CDN)** that securely delivers data, videos, applications, and APIs to users with low latency and high transfer speeds.
 
 # Features
-| Feature                 | Description                                                                  |
-| ----------------------- | ---------------------------------------------------------------------------- |
-| **Global Edge Network** | 400+ edge locations worldwide to cache and serve content near users.         |
-| **Caching**             | Reduces load on origin by storing responses at edge locations.               |
-| **Origin Support**      | Works with S3, EC2, ALB, API Gateway, Media Services, on-prem servers, etc.  |
-| **HTTPS/SSL Support**   | Full SSL/TLS encryption with custom or AWS-managed certificates.             |
-| **Security**            | Integrates with AWS Shield, WAF, and IAM. Supports signed URLs/cookies.      |
-| **Real-Time Logs**      | Supports CloudWatch, S3 logs, and Kinesis Data Streams for traffic insights. |
-| **Lambda@Edge**         | Run serverless functions at edge locations to customize content and headers. |
-| **Origin Failover**     | Automatically failover to a secondary origin if the primary is unavailable.  |
+| Feature                        | Description                                                                                                |
+| ------------------------------ | ---------------------------------------------------------------------------------------------------------- |
+| **Global Edge Network**        | 700+ PoPs + 900+ embedded locations; automatic routing & intelligent path selection                        |
+| **Caching**                    | Multi-layer caching (edge + 13 Regional Edge Caches + Origin Shield)                                       |
+| **Origin Shield**              | Optional centralized caching layer – dramatically reduces origin load and improves hit ratios              |
+| **Origin Support**             | S3, EC2, ALB, API Gateway, Elemental Media Services, custom HTTP/S origins, on-premises servers            |
+| **Origin Failover**            | Native automatic failover to secondary origin (now included in Business/Premium/Custom plans)              |
+| **HTTPS/TLS**                  | TLS 1.3, free ACM certificates, OCSP stapling, Session Tickets, Perfect Forward Secrecy                    |
+| **Security**                   | AWS Shield Standard (free), AWS WAF, geo-restriction, signed URLs/cookies, Field-Level Encryption, OAC/OAI |
+| **Programmability**            | CloudFront Functions (sub-ms lightweight JS) + Lambda@Edge (full Node.js/Python compute)                   |
+| **Real-Time Logs & Metrics**   | CloudWatch metrics, standard S3 logs, real-time logs to Kinesis Data Streams                               |
+| **Continuous Deployment**      | Built-in blue/green, weighted routing, session stickiness, instant rollback support                        |
+| **Compression & Optimization** | Brotli + Gzip, automatic image optimization (via Lambda@Edge or partner solutions)                         |
 ## Security and Compliance
 
-- **HTTPS everywhere** with custom SSL certificates via ACM.
-- **Origin Access Control (OAC)**: Restrict access to S3 or origin only via CloudFront.
-- **Signed URLs/Cookies** for secure, time-limited access.
-- **WAF & AWS Shield** integration for DDoS and Layer 7 attack protection.
-- **Geo restriction**: Block or allow access based on geographic location.
+- HTTPS/TLS everywhere with free ACM certificates (global)
+- Origin Access Control (OAC) – preferred way to lock S3/custom origins
+- AWS Shield Standard (always free) + Shield Advanced (in higher plans)
+- AWS WAF with managed rules, rate limiting, bot control (rules & sophistication scale with plan)
+- Signed URLs & Signed Cookies (time-limited private content)
+- Geo-restriction & geo-blocking
+- Field-Level Encryption (encrypt specific fields before they reach your origin)
 ## Integration with AWS
+|AWS Service|CloudFront Role|
+|---|---|
+|S3|Primary static content origin + OAC for private buckets|
+|EC2 / ALB / API Gateway|Dynamic content & API acceleration|
+|Elemental Media Services|Live & on-demand video streaming|
+|Lambda@Edge / CloudFront Functions|Edge compute & content personalization|
+|AWS WAF & Shield|Layer 7 protection & DDoS mitigation (bundled in all plans)|
+|Certificate Manager (ACM)|Free public certificates (now global, not just us-east-1)|
+|Route 53|DNS + health checks (included in all flat-rate plans)|
+|CloudWatch / Kinesis|Metrics & real-time logging|
+|Origin Shield|Extra caching layer to protect any origin|
 
-| AWS Service                   | CloudFront Role                           |
-| ----------------------------- | ----------------------------------------- |
-| **S3**                        | Distribute static content with caching.   |
-| **API Gateway**               | Distribute APIs with global acceleration. |
-| **Lambda@Edge**               | Customize requests/responses globally.    |
-| **Shield/WAF**                | Security layer against threats.           |
-| **Certificate Manager (ACM)** | Attach free public SSL certs.             |
-| **Route 53**                  | Use custom domains with CloudFront.       |
 # Use Cases
-| Feature                 | Description                                                                  |
-| ----------------------- | ---------------------------------------------------------------------------- |
-| **Global Edge Network** | 400+ edge locations worldwide to cache and serve content near users.         |
-| **Caching**             | Reduces load on origin by storing responses at edge locations.               |
-| **Origin Support**      | Works with S3, EC2, ALB, API Gateway, Media Services, on-prem servers, etc.  |
-| **HTTPS/SSL Support**   | Full SSL/TLS encryption with custom or AWS-managed certificates.             |
-| **Security**            | Integrates with AWS Shield, WAF, and IAM. Supports signed URLs/cookies.      |
-| **Real-Time Logs**      | Supports CloudWatch, S3 logs, and Kinesis Data Streams for traffic insights. |
-| **Lambda@Edge**         | Run serverless functions at edge locations to customize content and headers. |
-| **Origin Failover**     | Automatically failover to a secondary origin if the primary is unavailable.  |
+- Static website & asset delivery (S3 + CloudFront)
+- Global API acceleration (API Gateway / ALB)
+- Video streaming (live & VOD)
+- Software downloads & OTA updates
+- Dynamic personalization & A/B testing at the edge
+- Security-sensitive applications (private content, bot mitigation, WAF)
 # What need to be keep in mind
-| Aspect                      | Detail                                                 |
-| --------------------------- | ------------------------------------------------------ |
-| **Latency-sensitive setup** | Use Lambda@Edge wisely to avoid delays.                |
-| **Cold cache**              | Initial requests may go to origin and incur more cost. |
-| **Invalidation cost**       | Frequent content changes may increase cost.            |
-| **Custom SSL Certs**        | Free via ACM only in US/EU regions.                    |
-| **Logging volume**          | Logs can be large and impact S3 costs.                 |
+|Aspect|Detail|
+|---|---|
+|**Plan Selection**|Free → Pro → Business → Premium. You can mix plans across different distributions.|
+|**Usage Allowances**|Exceeding requests/data transfer in a plan = throttling (not overage charges). Upgrade to remove.|
+|**Invalidations**|Still pay-as-you-go (first 1 000 paths free/month, then $0.005 each) – not included in flat plans.|
+|**Lambda@Edge / Functions**|Included in all plans, but heavy Lambda@Edge usage still has separate compute charges.|
+|**Logging Volume**|Real-time logs to Kinesis can generate huge volume → cost & retention planning needed.|
+|**Origin Shield**|Free to enable, but dramatically reduces origin egress costs.|
+|**Cold Cache**|First request still goes to origin; use Cache Warmers or Origin Shield for large objects.|
+|**Custom SSL via ACM**|Now free in all regions (no more us-east-1 limitation).|
 # Cost
-It follows pay-as-you-go model
+Updated to **Flat Pricing** on 19th November 2025
+CloudFront flat-rate pricing plans combine the Amazon CloudFront global content delivery network (CDN) with multiple AWS services and features into a monthly price with **no overage charges**.
 
-| Item                              | Typical Cost (May 2025)                        |
-| --------------------------------- | ---------------------------------------------- |
-| **Data Transfer Out to Internet** | $0.085–$0.20/GB (depends on region and volume) |
-| **Requests (per 10,000)**         | ~$0.0075 for HTTP, ~$0.01 for HTTPS            |
-| **Invalidation Requests**         | First 1,000/month free, then ~$0.005/request   |
-| **Field-level Encryption**        | ~$0.02 per 10,000 requests                     |
-| **Lambda@Edge Invocations**       | ~$0.60/million + execution time                |
+Flat-rate pricing plans include the following for a monthly price:  
+• CloudFront CDN  
+• AWS WAF and DDoS protection  
+• Bot management and analytics  
+• Amazon Route 53 DNS  
+• Amazon CloudWatch Logs ingestion  
+• TLS certificate  
+• Serverless edge compute  
+• Amazon S3 storage credits each month
+
+Start with the $0/month Free plan and upgrade to access more capabilities and larger usage allowances.
+
+# Reference
+[CLoudFront Pricing](https://aws.amazon.com/cloudfront/pricing/)
