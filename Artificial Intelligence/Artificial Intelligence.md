@@ -1,0 +1,5 @@
+[[Amazon Bedrock]]
+[[Amazon Translate]]
+[[Amazon Lex]]
+[[Amazon Transribe]]
+[[Amazon Forecast]]

@@ -28,4 +28,14 @@ The ability to run systems to deliver business value at the lowest price point
 
 Cost optimization includes adopting a consumption model, analyzing and attributing expenditure, and using managed services to reduce the cost of ownership.
 
+# Sustainability
+The ability to continually improve sustainability impacts by reducing energy consumption and increasing efficiency across all components of a workload while maximizing the benefits from the provisioned resources and minimizing the total resources required
+
+When considering the sustainability of your architecture, apply these best practices:
+
+- Understand your impact by measuring the environmental effects of your workloads and modeling future changes
+- Establish sustainability goals for each workload and use them to guide architectural decisions
+- Maximize utilization through right-sizing and efficient design to improve energy efficiency
+- Anticipate and adopt new, more efficient hardware and software offerings as they become available
+
 # Visit The AWS Well-Architected Tool 

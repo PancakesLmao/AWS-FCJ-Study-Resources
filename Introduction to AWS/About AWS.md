@@ -1,7 +1,7 @@
 Amazon Web Services (AWS) is a comprehensive cloud computing platform provided by Amazon that offers over **350+ services** for a wide range of use cases. Follow **Pay-as-you-go** pricing model
 => AWS is Cloud Service provider, that's it!
 
-As mentioned in [[Definition of Cloud Computing]], AWS provides a variety of cloud service delivery models to meet different technical and business requirements. These models are commonly categorized as:
+As mentioned in [Definition of Cloud Computing], AWS provides a variety of cloud service delivery models to meet different technical and business requirements. These models are commonly categorized as:
 - **Infrastructure as a Service (IaaS):** Provides fundamental computing resources such as virtual machines, storage, and networking, allowing users to manage operating systems and applications while AWS manages the physical infrastructure.​
 - **Platform as a Service (PaaS):** Offers a managed environment for developers to build, deploy, and scale applications without the need to manage underlying infrastructure.​
 - **Software as a Service (SaaS):** Delivers fully managed software applications over the internet, enabling users to access applications without installation or maintenance.
@@ -15,8 +15,8 @@ For a detailed chronological breakdown, refer to the [AWS Service Timeline](http
 It’s _very_ comprehensive—so it’s intentionally not reproduced here to avoid turning this section into an information dump.
 ## [[AWS Global infrastructure]]
 ## Customer and AWS part of the [[Shared Responsibility Model]] 
-## [[Well-Architected Framework (5 Pillars)]] 
-[[Well-Architected Framework (5 Pillars)#Visit The AWS Well-Architected Tool]]
+## [[Well-Architected Framework (6 Pillars)]] 
+[[Well-Architected Framework (6 Pillars)#Visit The AWS Well-Architected Tool]]
 ## [[Total Cost of Ownership (TCO)]] and billing considerations
 [[Total Cost of Ownership (TCO)#Visit AWS Pricing Calculator]]
 [[Total Cost of Ownership (TCO)#AWS Pricing Models]]

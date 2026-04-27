@@ -1,8 +1,11 @@
 ## Table of Content
 [[Amazon EC2]]
 [[Amazon EC2 Auto Scaling]]
+[[AWS Lightsail]]
 [[AWS Lambda]]
 [[Amazon ECS]]
 [[Amazon EKS]]
 [[AWS Fargate]]
+[[AWS App Runner]]
 [[AWS Elastic Beanstalk ]]
+[[AWS Batch]]
