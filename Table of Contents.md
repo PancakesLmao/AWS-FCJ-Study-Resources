@@ -15,6 +15,7 @@
 [[Artificial Intelligence]]
 [[AWS IoT]]
 [[Developer Tools]]
+[[AWS Front-End Web-Mobile]]
 [[Other services]]
 [[AWS Marketplace]]
 
